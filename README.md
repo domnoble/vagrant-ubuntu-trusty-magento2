@@ -39,9 +39,11 @@ Navigate into the root project directory in a commandline, then run vagrant up c
 ## Magento2 Installation
 Assuming you kept the default configuration if we now visit 127.0.0.1 or localhost, we should be greeted by the magento installation, click get started and then go through the pre checks and configuration filling out the details shown below, set your prefered currency, time and language settings and create an admin account, then proceed with the installation.
 
+```
 Database Name : magento
 Database User : mageuser
 Database Pass : magepass
+```
 
 ## Post Installation
 
