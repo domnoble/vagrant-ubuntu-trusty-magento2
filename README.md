@@ -70,6 +70,7 @@ Once you are in you need to initialize the static files like js, css and images.
 
 `php bin/magento setup:static-content:deploy`
 
+`sudo cp /vagrant/di.xml /vagrant/magento2/app/etc/di.xml`
 
 ## Bugs & Frequent issues
 While testing i came accross several issues relating to VirtualBox....
