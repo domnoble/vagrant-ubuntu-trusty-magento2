@@ -48,7 +48,7 @@ Database Pass : magepass
 ```
 
 ## Post Installation 
-you will most likely find that the images and fonts in magento dont all display correctly, to fix this you can use an ssh client like putty to connect to the VM and run a couple of commands. to get the login details run `vagrant ssh` in a command like at the project root folder, that should output something similar to this : 
+you will most likely find that the images and fonts in magento dont all display correctly, to fix this you can use an ssh client like putty to connect to the VM and run a couple of commands. to get the login details run `vagrant ssh` in a command line at the project root folder, that should output something similar to this on windows (assuming you haven't installed ssh binaries into your path) : 
 ```
 Host: 127.0.0.1
 Port: 2222
@@ -62,7 +62,13 @@ The SSH login information on all Vagrant installs is normally:
 Username : vagrant
 Passwrod : vagrant
 ```
+Once you are in you need to initialize the static files like js, css and images. I normally change the ownership of the files to www-data but i dont think this is essential for getting it to work properly.
 
+`sudo chown -R www-data:www-data /vagrant/magento2`
+
+`cd /vagrant/magento2`
+
+`php bin/magento setup:static-content:deploy`
 
 
 ## Bugs & Frequent issues
