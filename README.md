@@ -48,7 +48,7 @@ Database Pass : magepass
 ## Post Installation
 
 
-## Bugs & Frequent issues
+## Bugs & Frequent Issues
 While testing i came accross several issues relating to VirtualBox....
 
 If the host only adapters are filled in virtualbox there will be a failure, this can be solved by going into the VirtualBox GUI and navigating to __File > Preferneces > Network > Host-only Networks__ and deleting some if not all of the host-only adapters. this can get filled fairly quickly if say you use something like kitematic with docker-tools. 
