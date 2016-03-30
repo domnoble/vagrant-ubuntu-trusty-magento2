@@ -60,7 +60,7 @@ Copy the Private Key path from the command line to the clipboard `Ctrl + C`. In 
 The SSH login information on all Vagrant installs is normally:
 ```
 Username : vagrant
-Passwrod : vagrant
+Password : vagrant
 ```
 Once you are in you need to initialize the static files like js, css and images. I normally change the ownership of the files to www-data but i dont think this is essential for getting it to work properly.
 
